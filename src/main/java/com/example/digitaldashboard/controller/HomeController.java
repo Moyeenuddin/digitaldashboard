@@ -16,4 +16,9 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping(value = "/patientForm")
+    public String patientForm() {
+        return "patientForm";
+    }
+
 }
