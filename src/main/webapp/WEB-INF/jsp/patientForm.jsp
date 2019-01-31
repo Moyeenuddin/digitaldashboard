@@ -13,52 +13,32 @@
 <body>
 
 <div class="container">
-    <form class="form-horizontal">
-        <%--<fieldset>--%>
+    <br>
+    <br>
+    <div class="jumbotron">
+        <h1>Patient Quantity Input Form</h1>
 
-            <!-- Form Name -->
-            <legend>Form Name</legend>
-
-            <!-- Button Drop Down -->
-            <div class="form-group">
-                <label class="col-md-4 control-label">Patient Type</label>
-                <div class="col-md-4">
-                    <div class="input-group">
-                        <input class="form-control" type="text">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                Types
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu pull-right">
-                                <li><a href="#">Indoor</a></li>
-                                <li><a href="#">Outdoor</a></li>
-                                <li><a href="#">OT</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <form class="form-inline" action="/action_page.php">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Indoor Patient</a></li>
+                    <li><a href="#">Outdoor Patient</a></li>
+                    <li><a href="#">OT Patient</a></li>
+                </ul>
             </div>
-
-            <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label">Patient Quantity</label>
-                <div class="col-md-4">
-                    <input type="number" class="form-control input-md">
-
-                </div>
+                <label>Number of Patient:</label>
+                <input type="number" class="form-control" id="">
             </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
 
-            <!-- Button -->
-            <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4">
-                    <button class="btn btn-primary">Update</button>
-                </div>
-            </div>
+    </div>
 
-        <%--</fieldset>--%>
-    </form>
+
+
 </div>
 
 
