@@ -19,7 +19,7 @@
 
 <center>
     <a href="http://localhost:1020/patientForm" class="btn btn-primary btn-lg"> New Patient Entry </a>
-    <a href="#" class="btn btn-primary btn-lg"> Patient report </a>
+    <a href="patientDashBoard" class="btn btn-primary btn-lg"> Patient report </a>
 </center>
 
 </div>

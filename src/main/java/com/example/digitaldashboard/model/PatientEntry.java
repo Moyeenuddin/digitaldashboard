@@ -16,6 +16,10 @@ public class PatientEntry {
     @Column(name = "patient_quentity")
     private Integer patientQuentity;
 
+    @Column(name = "date")
+    private Date date;
+
+
     public Integer getPatientId() {
         return patientId;
     }
@@ -47,9 +51,5 @@ public class PatientEntry {
     public void setDate(Date date) {
         this.date = date;
     }
-
-    @Column(name = "date")
-    private Date date;
-
 
 }

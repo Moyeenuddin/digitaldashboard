@@ -5,8 +5,10 @@ import com.example.digitaldashboard.model.PatientEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public class PatientEntryServiceimp implements PatientEntryService{
+public class PatientEntryServiceimp implements PatientEntryService {
 
     @Autowired
     PatientEntryRepository patientEntryRepository;
@@ -15,5 +17,10 @@ public class PatientEntryServiceimp implements PatientEntryService{
     @Override
     public void save(PatientEntry patientEntry) {
         patientEntryRepository.save(patientEntry);
+    }
+
+    @Override
+    public List<PatientEntry> patientEntrylist() {
+        return patientEntryRepository.findAll();
     }
 }
