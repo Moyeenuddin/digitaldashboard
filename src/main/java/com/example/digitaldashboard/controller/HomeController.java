@@ -20,6 +20,12 @@ public class HomeController {
     public String index() {
         return "index";
     }
+    @GetMapping(value = "/patientGraph")
+    public String patientGraph() {
+        return "patientGraph";
+    }
+
+
 
     @GetMapping(value = "/patientForm")
     public String patientForm() {
