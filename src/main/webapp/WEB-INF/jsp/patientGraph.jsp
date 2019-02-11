@@ -2,16 +2,17 @@
 <html>
 <head>
     <title>Digital Dashboard</title>
-    <script src="../js/jquery-2.2.1.min.js"></script>
-    <script src="../js/kendo.all.min.js"></script>
+    <link rel="stylesheet" href="/css/kendo.material.mobile.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/kendo.common-material.min.css">
+    <link rel="stylesheet" href="/css/kendo.material.min.css">
+    <script src="/js/jquery-2.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/kendo.all.min.js"></script>
     <script>
         var dt = new Date();
         document.getElementById("datetime").innerHTML = dt.toLocaleString();
     </script>
-    <link rel="stylesheet" href="../css/kendo.material.mobile.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/kendo.common-material.min.css">
-    <link rel="stylesheet" href="../css/kendo.material.min.css">
 </head>
 <body>
 <div style="margin: 30px;">

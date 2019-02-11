@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
-@Controller
+@RestController
 public class HomeController {
 
     @Autowired
     PatientEntryService patientEntryService;
 
     //@RequestMapping(value = "/index", method = RequestMethod.GET)
-    @GetMapping(value = "/index")
+    @GetMapping(value = "/")
     public String index() {
         return "index";
     }
+
     @GetMapping(value = "/patientGraph")
     public String patientGraph() {
         return "patientGraph";
     }
-
 
 
     @GetMapping(value = "/patientForm")
@@ -40,12 +40,20 @@ public class HomeController {
 
     @GetMapping(value = "PatientEntryList")
     public List<PatientEntry> patientEntryList() {
-        return patientEntryService.patientEntrylist();
+        List<PatientEntry> allTypeOfPatient = patientEntryService.patientEntrylist();
+   /*for (allTypeOfPatient allTypeOfPatient: allTypeOfPatient) {
+            if (allTypeOfPatient.getpatientType() == OPD Patient ) {
+                result.add(person);
+            }
+        }*/
+
+        return allTypeOfPatient ;
+
     }
 
     @GetMapping(value = "/patientDashBoard")
     public String patientDashBoard() {
-        System.out.println("patientDashBoard is running ");
-        return "patientDashBoard";
+
+        return "patientGraph";
     }
 }
